@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import testVue from './components/test/test'
+Vue.config.productionTip = false;
 
-Vue.config.productionTip = false
-
+Vue.use(testVue);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
